@@ -9,3 +9,14 @@ dependencies {
 repositories {
     mavenCentral()
 }
+
+group='com.android.gradle.plugin'
+version='1.0.0'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('../repo'))
+        }
+    }
+}
